@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/manyMonthOut"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F1EAE2"
+        android:gravity="center"
+        android:text="Здесь будет отражена информация по ежемесячным платежам за ипотеку"
+        android:textColor="@color/purple_200"
+        android:textColorHint="#7FB0C6"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:text="ВЫПИСКА ПО ЕЖЕМЕСЯЧНЫМ ВЫПЛАТАМ"
+        android:textColor="@color/purple_200"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/manyMonthOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countOut" />
+
+    <TextView
+        android:id="@+id/countOut"
+        android:layout_width="342dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="32dp"
+        android:background="#F1EAE2"
+        android:gravity="center"
+        android:text="Здесь будет отражена информация числа месяцев выплаты ипотеки"
+        android:textColor="@color/purple_200"
+        android:textColorHint="#7FB0C6"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        android:text="КОЛИЧЕСТВО МЕСЯЦЕВ ВЫПЛАТЫ ИПОТЕКИ"
+        android:textColor="@color/purple_200"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
